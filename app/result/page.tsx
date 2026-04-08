@@ -38,7 +38,7 @@ export default function ResultPage() {
   const handleDone = () => {
     localStorage.removeItem("last_result");
     dispatch(resetExam());
-    router.push("/dashboard");
+    router.push("/");
   };
 
   return (
