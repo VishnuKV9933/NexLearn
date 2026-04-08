@@ -25,6 +25,8 @@ const examSlice = createSlice({
   initialState,
   reducers: {
     setInitialData: (state, action) => {
+     
+
        state.questions = action.payload.questions;
        state.timeLeft = action.payload.total_time * 60; 
       
