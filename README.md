@@ -72,8 +72,8 @@ NEXT_PUBLIC_API_URL=https://nexlearn.noviindusdemosites.in
 ## 🧪 Run Locally
 
 ```bash
-git clone <your-repo-link>
-cd <project-folder>
+git clone https://github.com/VishnuKV9933/NexLearn.git
+cd NexLearn
 npm install
 npm run dev
 ```
