@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NexLearn Frontend Machine Test
 
-## Getting Started
+## 🚀 Project Overview
 
-First, run the development server:
+This project is a frontend implementation of an exam platform based on the provided Figma design. It includes OTP-based authentication, user onboarding, and exam functionality.
+
+---
+
+## 🛠️ Tech Stack
+
+* Next.js (App Router)
+* TypeScript
+* Tailwind CSS
+* Fetch API (custom wrapper)
+* Redux Toolkit
+
+---
+
+## 🔐 Authentication Flow
+
+1. User enters mobile number
+2. OTP sent via `/auth/send-otp`
+3. OTP verified via `/auth/verify-otp`
+
+   * Existing user → logged in
+   * New user → redirected to create profile
+4. Profile created via `/auth/create-profile`
+5. Tokens stored in localStorage
+6. Protected routes require JWT
+
+---
+
+## 🌐 API Configuration
+
+Create a `.env.local` file in the root of the project and add:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+NEXT_PUBLIC_API_URL=https://nexlearn.noviindusdemosites.in
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* Pixel-perfect UI implementation from Figma
+* Fully responsive design
+* OTP-based authentication
+* Profile creation with image upload
+* Protected routes
+* Exam module with timer
+* Answer submission and result view
+* Loading and error handling
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ⚡ Performance
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Optimized images using Next.js
+* Clean component structure
+* Minimal unnecessary re-renders
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ♿ Accessibility
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Semantic HTML
+* Form labels
+* Accessible interactions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🧪 Run Locally
+
+```bash
+git clone <your-repo-link>
+cd <project-folder>
+npm install
+npm run dev
+```
+
+Open:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 📄 Submission
+
+GitHub Repository: https://github.com/VishnuKV9933/NexLearn.git
+
+---
+
+## 👤 Author
+
+Vishnu KV
