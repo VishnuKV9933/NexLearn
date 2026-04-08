@@ -1,4 +1,5 @@
 "use client";
+import { useRouter } from "next/router";
 import React, { useState, useRef } from "react";
 import { toast } from "react-hot-toast";
 import { Toaster } from "react-hot-toast";
@@ -9,7 +10,7 @@ interface ProfileFormProps {
 export default function ProfileForm({ mobile }: ProfileFormProps) {
   const [loading, setLoading] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
-
+  const router = useRouter()
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -77,6 +78,7 @@ export default function ProfileForm({ mobile }: ProfileFormProps) {
          document.cookie = `access_token=${result.access_token}; path=/; max-age=86400`;
         localStorage.setItem("access_token", result.access_token);
         localStorage.setItem("refresh_token", result.refresh_token);
+        router.push("/");
       } else {
         toast.error(result.message || "Failed to create profile", {
           id: loadingToast,

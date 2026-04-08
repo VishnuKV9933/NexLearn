@@ -22,7 +22,11 @@ export default function MobileInput({
 
   const handleSendOTP = async () => {
     if (mobile.length < 12) {
-      return toast.error("Please enter a valid 10-digit mobile number");
+      toast.dismiss("invalid-mobile");
+      return toast.error("Please enter a valid 10-digit mobile number",{
+  id: "invalid-mobile",
+});
+      
     }
 
     setLoading(true);
