@@ -15,6 +15,7 @@ export default function LoginIllustration() {
           alt="Learning Illustration"
           width={300}
           height={300}
+          loading="eager"
           className="object-contain"
         />
       </div>

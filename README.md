@@ -32,10 +32,11 @@ This project is a frontend implementation of an exam platform based on the provi
 
 ## 🌐 API Configuration
 
-Create a `.env.local` file in the root of the project and add:
+Create a `.env` file in the root of the project and add:
 
 ```bash
-NEXT_PUBLIC_API_URL=https://nexlearn.noviindusdemosites.in
+NEXT_PUBLIC_API_URL=https://nexlearn.noviindusdemosites.
+API_URL=https://nexlearn.noviindusdemosites.in
 ```
 
 ---

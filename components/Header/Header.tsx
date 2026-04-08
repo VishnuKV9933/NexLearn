@@ -16,7 +16,7 @@ export default function Header() {
           alt="NexLearn Logo"
           width={150}
           height={40}
-          className="object-contain"
+          className="object-contain h-auto"
           priority
         />
       </div>
